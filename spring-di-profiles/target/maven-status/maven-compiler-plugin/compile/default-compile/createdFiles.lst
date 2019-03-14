@@ -1,0 +1,7 @@
+app\config\profiles\DevProfile.class
+app\beans\NameRepository.class
+app\config\AppConfig.class
+app\config\AppConfig$1.class
+app\SpringDiApplication.class
+app\config\DatabaseDatasource.class
+app\config\profiles\ProdProfile.class
