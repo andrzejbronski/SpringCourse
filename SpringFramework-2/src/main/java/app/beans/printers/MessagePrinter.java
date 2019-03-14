@@ -1,34 +1,18 @@
 package app.beans.printers;
 
 import app.beans.decorators.MessageDecorator;
+import app.beans.producers.Message;
 import app.beans.producers.MessageProducer;
-import app.beans.producers.Producer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 public class MessagePrinter {
-
-    private MessageProducer producer;
-    private MessageDecorator decorator;
-
     @Autowired
-    public MessagePrinter(@Producer(type = Producer.ProducerType.FILE) MessageProducer producer) {
-        this.producer = producer;
-    }
-
-    public MessageDecorator getDecorator() {
-        return decorator;
-    }
-
-    @Autowired(required = false)
-    public void setDecorator(MessageDecorator decorator) {
-        this.decorator = decorator;
-    }
+    @Message(type = Message.MessageType.FILE)
+    private MessageProducer producer;
 
     public void print() {
-        String message = producer.getMessage();
-        message = decorator != null? decorator.decorate(message) : message;
-        System.out.println(message);
+        System.out.println("Message produced: "+producer.getMessage());
     }
 }
