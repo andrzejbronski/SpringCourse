@@ -5,23 +5,27 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class MessagePrinter {
-@Autowired
+
     private MessageProducer producer;
+    private MessageDecorator decorator;
 
-    MessagePrinter() {}
-
+    @Autowired
     public MessagePrinter(MessageProducer producer) {
         this.producer = producer;
     }
 
-    public MessageProducer getProducer() {
-        return producer;
+    public MessageDecorator getDecorator() {
+        return decorator;
     }
-    public void setProducer(MessageProducer producer) {
-        this.producer = producer;
+
+    @Autowired(required = false)
+    public void setDecorator(MessageDecorator decorator) {
+        this.decorator = decorator;
     }
 
     public void print() {
-        System.out.println(producer.getMessage());
+        String message = producer.getMessage();
+        message = decorator != null? decorator.decorate(message) : message;
+        System.out.println(message);
     }
 }
