@@ -1,13 +1,13 @@
 package app;
 
 
+import app.beans.printers.MessagePrinter;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import beans.MessagePrinter;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan(basePackageClasses = MessagePrinter.class)
+@ComponentScan
 public class SpringDiApplication {
 
     public static void main(String[] args) {

@@ -1,5 +1,8 @@
-package beans;
+package app.beans.printers;
 
+import app.beans.decorators.MessageDecorator;
+import app.beans.producers.MessageProducer;
+import app.beans.producers.Producer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -10,7 +13,7 @@ public class MessagePrinter {
     private MessageDecorator decorator;
 
     @Autowired
-    public MessagePrinter(MessageProducer producer) {
+    public MessagePrinter(@Producer(type = Producer.ProducerType.FILE) MessageProducer producer) {
         this.producer = producer;
     }
 

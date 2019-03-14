@@ -2,12 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f748d721-1d45-46ad-8f24-75e6be18c2f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/beans/MessageDecorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/beans/UpperCaseMessageDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/beans/decorators/LowerCaseMessageDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/beans/producers/FileMessageProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/beans/producers/Producer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/message.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/beans/MessagePrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/MessagePrinter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/beans/MessagePrinter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/beans/MessagePrinter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/SpringDiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SpringDiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beans/MessageDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/beans/decorators/MessageDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beans/MessagePrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/beans/printers/MessagePrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beans/MessageProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/beans/producers/MessageProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beans/SimpleMessageProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/beans/producers/SimpleMessageProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beans/UpperCaseMessageDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/beans/decorators/UpperCaseMessageDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/SpringDiApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/SpringDiApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/beans/MessageDecorator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/beans/MessagePrinter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/beans/MessageProducer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/beans/SimpleMessageProducer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/beans/UpperCaseMessageDecorator.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,7 +32,7 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/beans/MessageProducer.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/beans/producers/MessageProducer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="38">
               <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
@@ -29,11 +41,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/beans/SimpleMessageProducer.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/beans/producers/SimpleMessageProducer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+            <state relative-caret-position="304">
+              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#127#128#0" expanded="true" />
                 <element signature="e#197#198#0" expanded="true" />
               </folding>
@@ -44,8 +57,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/app/SpringDiApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+            <state relative-caret-position="138">
+              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -62,33 +75,70 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/beans/MessagePrinter.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/beans/printers/MessagePrinter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+            <state relative-caret-position="246">
+              <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#287#288#0" expanded="true" />
-                <element signature="e#327#328#0" expanded="true" />
-                <element signature="e#435#436#0" expanded="true" />
-                <element signature="e#570#571#0" expanded="true" />
+                <element signature="e#620#621#0" expanded="true" />
+                <element signature="e#755#756#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/beans/UpperCaseMessageDecorator.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/beans/decorators/UpperCaseMessageDecorator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+            <state relative-caret-position="266">
+              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/beans/MessageDecorator.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/beans/decorators/LowerCaseMessageDecorator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/beans/producers/FileMessageProducer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/beans/producers/Producer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/beans/decorators/MessageDecorator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="57">
               <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
@@ -101,8 +151,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -115,11 +166,19 @@
         <option value="$PROJECT_DIR$/src/main/java/beans/MessageProducer.java" />
         <option value="$PROJECT_DIR$/src/main/java/beans/SimpleMessageProducer.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/ApplicationConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/app/SpringDiApplication.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/beans/MessageDecorator.java" />
         <option value="$PROJECT_DIR$/src/main/java/beans/MessagePrinter.java" />
         <option value="$PROJECT_DIR$/src/main/java/beans/UpperCaseMessageDecorator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/SpringDiApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/beans/decorators/LowerCaseMessageDecorator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/beans/decorators/UpperCaseMessageDecorator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/beans/message.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/app/beans/producers/FileMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/beans/producers/Producer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/beans/producers/FileMessageProducer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/beans/producers/SimpleMessageProducer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/beans/printers/MessagePrinter.java" />
       </list>
     </option>
   </component>
@@ -181,7 +240,45 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="beans" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringFramework-2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
+              <item name="decorators" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringFramework-2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
+              <item name="printers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringFramework-2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
+              <item name="producers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringFramework-2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringTest" type="b2602c69:ProjectViewProjectNode" />
@@ -197,9 +294,22 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552547333322" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552555787550" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/app" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="app.beans.producers" />
+      <recent name="app.beans.printers" />
+      <recent name="app" />
+      <recent name="app.beans.decorators" />
+      <recent name="app.beans" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Andrzej\Desktop\Edukacja\SpringCourse\SpringFramework-2\src\main\resources" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -244,18 +354,18 @@
       <option name="presentableId" value="Default" />
       <updated>1552485862120</updated>
       <workItem from="1552485865508" duration="1229000" />
-      <workItem from="1552517254394" duration="3608000" />
+      <workItem from="1552517254394" duration="8542000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4837000" />
+    <option name="totallyTimeSpent" value="9771000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21558245" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21558245" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -264,7 +374,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33955857" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31918505" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -292,13 +402,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/beans/MessageProducer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/app/ApplicationConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -316,52 +419,108 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/beans/producers/MessageProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/app/SpringDiApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        <state relative-caret-position="138">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/beans/MessageDecorator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/beans/decorators/MessageDecorator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/beans/SimpleMessageProducer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/message.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        <state>
+          <caret column="494" selection-start-column="494" selection-end-column="494" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/beans/producers/FileMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
           <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/beans/producers/Producer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/beans/decorators/UpperCaseMessageDecorator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/beans/decorators/LowerCaseMessageDecorator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/beans/producers/SimpleMessageProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#127#128#0" expanded="true" />
             <element signature="e#197#198#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/beans/MessagePrinter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/beans/producers/FileMessageProducer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+        <state relative-caret-position="228">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#287#288#0" expanded="true" />
-            <element signature="e#327#328#0" expanded="true" />
-            <element signature="e#435#436#0" expanded="true" />
-            <element signature="e#570#571#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/beans/UpperCaseMessageDecorator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/beans/printers/MessagePrinter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        <state relative-caret-position="246">
+          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#755#756#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
