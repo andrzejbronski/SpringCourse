@@ -13,7 +13,7 @@ public class SpringJpaApplication {
                 new AnnotationConfigApplicationContext(SpringJpaApplication.class);
         BookDao bookDao = ctx.getBean(BookDao.class);
         //zapisujemy
-        Book book = new Book("1234567890468", "Spring is so cool", "Andrzej");
+        Book book = new Book("1234567890468", "Spring is so cool & it's working!", "Andrzej");
         bookDao.save(book);
         //odczytujemy
         Book bookGet = bookDao.get(1L);
