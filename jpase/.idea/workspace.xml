@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="395de88d-06a8-43a3-9d5f-887e87be39a4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring-jpa/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-jpa/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-jpa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-jpa/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-jpa/src/main/java/app/SpringJpaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-jpa/src/main/java/app/SpringJpaApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-jpa/src/main/java/app/config/JpaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-jpa/src/main/java/app/config/JpaConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-jpa/target/classes/app/SpringJpaApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-jpa/target/classes/app/SpringJpaApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-jpa/target/classes/app/config/JpaConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-jpa/target/classes/app/config/JpaConfig.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -232,7 +238,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552981511506" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552982287827" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
