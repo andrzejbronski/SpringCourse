@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="395de88d-06a8-43a3-9d5f-887e87be39a4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring-jpa/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-jpa/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-jpa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-jpa/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-jpa/src/main/java/app/SpringJpaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-jpa/src/main/java/app/SpringJpaApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-jpa/src/main/java/app/config/JpaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-jpa/src/main/java/app/config/JpaConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-jpa/target/classes/app/SpringJpaApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-jpa/target/classes/app/SpringJpaApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-jpa/target/classes/app/config/JpaConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-jpa/target/classes/app/config/JpaConfig.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -136,7 +130,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-248" />
     <option name="y" value="-18" />
     <option name="width" value="1382" />
@@ -238,7 +232,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552982287827" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552982369306" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -296,8 +290,7 @@
     <option name="totallyTimeSpent" value="13048000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -309,7 +302,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.41086587" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.41086587" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
